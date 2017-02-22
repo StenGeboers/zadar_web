@@ -1,41 +1,108 @@
 /* Space out content a bit */
 body {
-  padding-top: 20px;
+  padding-top: 0px;
   padding-bottom: 20px;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+.right {
+    float: left;
+    
+    
+}
+.carousel{
+    background: #2f4357;
+    margin-top: 20px; 
+}
+.carousel .item img{
+    margin: 0 auto; /* Align slide image horizontally center */
+}
+.bs-example{
+  margin: 20px;
+}
+#div2
+{
+width: 320px;
+}
+.plox{line-height: 31px;}
+.coat{
+  float: right;
+}
+
+/* Carousel base class */
+.carousel {
+  max-height: 100%;
+  max-height: 380px;
+  margin-bottom: 60px;
+  height:auto;
+}
+
+.padje{
+  margin-top: 15px;
+}
+
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+    background: rgba(0, 0, 0, 0.45);
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  max-height: 100%;
+  max-height: 380px;
+  background-color: #777;
+}
+.carousel-inner > .item > img {
+ /*  position: absolute;*/
+  top: 0;
+  left: 0;
+  min-width: 40%;
+  max-width: 100%;
+  max-height: 380px;
+  width: 100%;
+  margin-right:auto;
+  margin-left:auto;
+  height:100%;
+
+}
+
 .header,
 .marketing,
 .footer {
   padding-right: 15px;
   padding-left: 15px;
+
 }
 
 /* Custom page header */
 .header {
-  padding-bottom: 20px;
-  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 0px;
+  border-bottom: 1px solid orange;
+  color:red;
 }
 /* Make the masthead heading the same height as the navigation */
 .header h3 {
   margin-top: 0;
   margin-bottom: 0;
-  line-height: 40px;
-
+  line-height: 20px;
 }
 
-}
 /* Custom page footer */
 .footer {
-  padding-top: 19px;
+  padding-top: 0px;
+  margin-top: 40px;
   color: #777;
-  border-top: 1px solid #e5e5e5;
+  border-top: 1px solid orange;
 }
+
 
 /* Customize container */
 @media (min-width: 768px) {
   .container {
+
     max-width: 730px;
   }
 }
@@ -51,6 +118,7 @@ body {
 .jumbotron .btn {
   padding: 14px 24px;
   font-size: 21px;
+
 }
 
 /* Supporting marketing content */
@@ -72,7 +140,7 @@ body {
   }
   /* Space out the masthead */
   .header {
-    margin-bottom: 30px;
+    margin-bottom: 40px;
   }
   /* Remove the bottom border on the jumbotron for visual effect */
   .jumbotron {
